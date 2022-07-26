@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <!-- <link rel="stylesheet" href="css/sm.css"> -->
+  <!-- <link rel="stylesheet" href="css/gugudan.css"> -->
+  <style>
+    body{
+      padding: 10px;
+      text-align: center;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // var current_year=2022;
+    // var birthyear;
+    // var age;
+    // birthyear=prompt("태어난 날짜를 입력 하시오","(yyyy)")
+    // age=current_year-birthyear+1;
+    // document.write("나이는"+age+"입니다")
+    // console.log(age) //콜솔에 데이터 넣기
+    // var it=["채령","예지","류진","유나","리아"];
+    // var ch;
+    // ch=prompt("번호를 입력하시오");
+    // document.write(it[ch]+"입니다")
+    // var session=prompt("번호를 선택하시오(1-2-3")
+    // if(session!==null){
+
+    //   switch(session){
+    //     case "1": document.write("<p>에스파의<strong>카리나</strong>입니다</p>")
+    //       break;
+    //     case "2": document.write("<p>에스파의<strong>윈터</strong>입니다</p>")
+    //       break;
+    //     case "3": document.write("<p>에스파의<strong>이수만</strong>입니다</p>")
+    //       break;
+    //     default: alert("잘못입력했습니다.")  
+    //   }
+    // }
+    // var i;
+    // var j=0;
+    // for(i=1;i<11;i++){
+    //   j=j+i;
+    // }
+    // document.write("10의 합은"+j+"입니다")
+    // var i, j;
+    // for(i=1;i<10;i++){
+    //   document.write("<div>");
+    //   document.write("<h3>"+i+"단</h3>");
+    //   for(j=1;j<10;j++){
+    //     document.write(i+"x"+j+"="+i*j+"<br>");
+    //   }
+    //   document.write("</div>");
+    // }
+    var n=prompt("숫자를 입력하시오","10");
+    var msg="";
+
+    if(n!==null){
+      var result=1;
+      var t=1;
+      while(t<n){
+        result=result*t;
+        t++;
+      }
+      msg=n+"!="+result;
+    }
+    else{
+      msg="값을 입력하지 않았습니다."
+    }
+    document.write(msg);
+
+
+
+  </script>
+</body>
+</html>
