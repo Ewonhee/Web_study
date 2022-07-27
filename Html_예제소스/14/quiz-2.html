@@ -9,9 +9,29 @@
 			font-size:1.2em;
 			text-align:center;
 		}
+		p{
+			color: blueviolet;
+		}
 	</style>
 </head>
 <body>
 	<h2>3의 배수 찾기</h2>
+	<script>
+		var p=prompt("몇 까지 3의 배수를 찾을까요?","50")
+		var count=0;
+
+
+		if(p!==null){
+			var it;
+			for(it=1;it<p;it++)
+			{
+				if(it%3==0){
+					document.write(it+","+" ");
+					count++;
+				}
+			}
+		}
+		document.write("<p>"+p+"까지의 3배수의 개수:"+count+"</p>");
+	</script>
 </body>
 </html>

@@ -56,23 +56,34 @@
     //   }
     //   document.write("</div>");
     // }
-    var n=prompt("숫자를 입력하시오","10");
-    var msg="";
+    // var n=prompt("숫자를 입력하시오","10");
+    // var msg="";
 
-    if(n!==null){
-      var result=1;
-      var t=1;
-      while(t<n){
-        result=result*t;
-        t++;
-      }
-      msg=n+"!="+result;
-    }
-    else{
-      msg="값을 입력하지 않았습니다."
-    }
-    document.write(msg);
+    // if(n!==null){
+    //   var result=1;
+    //   var t=1;
+    //   while(t<n){
+    //     result=result*t;
+    //     t++;
+    //   }
+    //   msg=n+"!="+result;
+    // }
+    // else{
+    //   msg="값을 입력하지 않았습니다."
+    // }
+    // document.write(msg);
 
+  var m=prompt("숫자를 입력하시오","10")
+  var msg="";
+
+  if(m!==null){
+    var ssu=1;
+    for(var it=1;it<=m;it++){
+      ssu=ssu*it;
+    }
+    msg=m+"!="+ssu;
+  }
+  document.write(msg)
 
 
   </script>

@@ -4,12 +4,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>연습문제 1</title>
+	<style>
+		body{
+			text-align: center;
+		}
+		h2{
+			color: blueviolet;
+		}
+	</style>
 </head>
 <body>
 	<h2>4의 배수일까 아닐까</h2>
 
 	<script>
-	
+	var p=prompt("숫자를 입력하시오","584")
+	var anw="";
+	var key;
+	if(p!==null){
+		if(p%4==0){
+			anw=p+"는 4의 배수입니다!!";
+		}
+		else{
+			anw=p+"는 4의 배수가 아닙니다!!";
+		}
+	}
+	document.write(anw);
 	</script>
 </body>
 </html>
