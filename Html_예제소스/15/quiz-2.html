@@ -4,8 +4,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>연습문제 2</title>
+	<style>
+		p{
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
+	<h1>너만은 나이길 그약속을 지켜줄 내사랑</h1>
+	<script>
+		var num1=prompt("숫자를 입력하세요","10");
+		var num2=prompt("숫자를 입력하세요","20");
 	
+
+		function same_sample(num1,num2){
+			if(num1!==null||num2!==null){
+				if(num1===num2){
+					alert(num1+", "+num2+"는 같습니다.");
+				}
+				else if(num1>num2){
+					alert(num1+"가"+num2+"보다 큽니다.");
+				}
+				else{
+					alert(num2+"가"+num1+"보다 큽니다.");
+				}
+			}
+		}
+		
+		same_sample(num1,num2);
+		
+	</script>
+	<p>백년 넘게 남았는데 그렇게 운명이죠 우린 악연이라해도 인연이라도
+		 해도 우리 어떻게 해든 무엇이든 되어 있고 다시 만날 사람해야해요 안되요 안되요 그대는 나에게 </p>
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container{
+      margin: 50px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 2px double black;
+      background-color: rgb(9, 151, 238);
+      text-align: center;
+    }
+    h1{
+      margin-top: 80px;
+    }
+    #result{
+      font-size: 1.8em;
+      font-weight: bold;
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>운동날짜</h1>
+    <p><span id="result"></span>일을 연속으로 <br> 운돌을 했군요.</p>
+    <p>근성장가즈아!</p>
+  </div>
+  <script>
+    var now=new Date("2022-07-28");
+    var firstDay=new Date("2022-07-01");
+
+    var tonow=now.getTime();
+    var toFirst=firstDay.getTime();
+    var passtime= tonow - toFirst;
+
+    passtime=Math.round(passtime/(1000*60*60*24));
+
+    document.querySelector('#result').innerText=passtime;
+  </script>
+
+  <script>
+  function testCenter(doc, win, w, h){
+    var left=(screen.availWidth-w)/2;
+    var top=(screen.availHeight-h)/2;
+    var opt = "left=" + left + ",top=" + top + ",width=" + w + ",height=" + h;
+        window.open(doc, win, opt);
+
+  }
+
+   testCenter("notice.html","pop",500,400)
+  </script>
+  
+</body>
+</html>
