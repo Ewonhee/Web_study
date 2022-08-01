@@ -15,11 +15,12 @@
 		var now = new Date();
 
 		function inntext(){
-			document.getElementById("current").innerText = now;
+			document.getElementById("current").innerText = "<em>" + now + "</em>"
 		}
 		function innhtml() {
-			document.getElementById("current").innerHTML = "<em>" + now + "</em>";
+			document.getElementById("current").innerHTML = "<strong>" + now + "</strong>";
 		}
+		//em태그 기울기
 	</script>
 </body>
 </html>
